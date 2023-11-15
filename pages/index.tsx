@@ -1,13 +1,13 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Header from '../components/Header'
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-    </main>
+    <div>
+      <Header />
+      <main className="p-6">
+        <h2 className="text-xl">Welcome to uValue</h2>
+        <p>This is a valuation app with three basic models: a conventional cost of capital Discounted Cash Flow (DCF) model, an Adjusted Present Value (APV) model, and a dividend discount model.</p>
+      </main>
+    </div>
   )
 }
